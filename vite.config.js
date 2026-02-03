@@ -7,9 +7,11 @@ export default defineConfig({
   build: {
     outDir: 'docs',
     emptyOutDir: true,
+    target: 'es2015',
     rollupOptions: {
       output: {
-        entryFileNames: 'assets/[name].mjs'
+        format: 'iife',
+        entryFileNames: 'assets/[name].js'
       }
     }
   }
