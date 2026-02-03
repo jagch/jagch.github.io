@@ -1,0 +1,1 @@
+[{"dest": "/index.html", "src": "./index.html", "headers": [{"key": "Content-Type", "value": "text/html"}]}, {"dest": "/assets/**/*", "headers": [{"key": "Content-Type", "value": "application/javascript"}]}]
