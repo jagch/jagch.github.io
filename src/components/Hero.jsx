@@ -14,8 +14,8 @@ const Hero = () => {
     { text: "Hola, soy jagch", delay: 20, type: 'title' },
     { text: "Soy desarrollador full-stack con especialización en backend.", delay: 10, type: 'main' },
     { text: "Ayudo a empresas y proyectos a construir sistemas confiables, seguros y preparados para crecer.", delay: 8, type: 'main' },
-    { text: "Desarrollo APIs, manejo bases de datos y realizo integraciones sólidas con el frontend. También creo páginas web modernas, claras y orientadas a objetivos.", delay: 8, type: 'secondary' },
-    { text: "Me enfoco en soluciones mantenibles y alineadas al negocio.", delay: 10, type: 'focus' },
+    { text: "Desarrollo APIs, manejo bases de datos y realizo integraciones sólidas con el frontend. También creo páginas web modernas, claras y orientadas a objetivos.", delay: 8, type: 'main' },
+    { text: "Me enfoco en soluciones mantenibles y alineadas al negocio.", delay: 10, type: 'main' },
     { text: "Menos improvisación. Más arquitectura.", delay: 15, type: 'tagline' }
   ]
   
