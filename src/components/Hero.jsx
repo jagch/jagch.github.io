@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Hero.css'
+import meImage from '../assets/me.jpeg'
 
 const Hero = () => {
   const [displayedTexts, setDisplayedTexts] = useState([])
@@ -53,7 +54,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-image-container">
           <img 
-            src="/me.jpeg" 
+            src={meImage} 
             alt="Jagch Profile" 
             className={`hero-image ${showImage ? 'show' : ''}`}
           />
