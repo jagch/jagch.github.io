@@ -6,6 +6,11 @@ export default defineConfig({
   base: '/',
   build: {
     outDir: 'docs',
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name].mjs'
+      }
+    }
   }
 })
