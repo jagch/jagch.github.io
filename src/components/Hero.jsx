@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Hero.css'
 import meImage from '../assets/me.jpeg'
+import alienIcon from '/alien.png'
 
 const Hero = () => {
   const [displayedTexts, setDisplayedTexts] = useState([])
@@ -66,11 +67,15 @@ const Hero = () => {
             {/* Título */}
             <h1 className="hero-title">
               {displayedTexts.filter(t => t.type === 'title').map((item, index) => (
-                <span key={index} className="greeting completed-text">{item.text}</span>
+                <span key={index} className="greeting completed-text">
+                  {item.text.replace('jagch', 'jagch')}
+                  {item.text.includes('jagch') && <img src={alienIcon} alt="alien icon" className="alien-icon" />}
+                </span>
               ))}
               {sections[0] && currentSection === 0 && (
                 <span className="greeting">
-                  {currentText}
+                  {currentText.replace('jagch', 'jagch')}
+                  {currentText.includes('jagch') && <img src={alienIcon} alt="alien icon" className="alien-icon" />}
                   <span className="cursor">_</span>
                 </span>
               )}

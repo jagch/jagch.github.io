@@ -75,6 +75,15 @@
   font-family: 'Courier New', monospace;
   color: #00ff00;
   text-shadow: 0 0 10px #00ff00;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.alien-icon {
+  height: 3.5rem;
+  width: auto;
+  animation: float 3s ease-in-out infinite;
 }
 
 .typing-container {
@@ -82,7 +91,9 @@
 }
 
 .greeting {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .completed-text {
